@@ -94,7 +94,12 @@ public class SearchService {
             Pageable pageable) {
 
         // Normalize and sanitize search input
-        String normalizedQuery = (query == null) ? "" : query.trim().replaceAll("\\s+", " ").toLowerCase();
+        String normalizedQuery = (query == null) ? "" : query.trim().toLowerCase();
+        // Replace non-alphanumeric characters (except whitespace) with space to prevent
+        // tsquery syntax errors
+        normalizedQuery = normalizedQuery.replaceAll("[^a-z0-9\\s]", " ");
+        // Collapse multiple spaces
+        normalizedQuery = normalizedQuery.replaceAll("\\s+", " ").trim();
 
         log.info(
                 "Performing search - Q: '{}', Types: {}, Region: {}, Field: {}, Year: {}-{}, Pageable: {}",

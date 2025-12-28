@@ -1,8 +1,9 @@
-package com.guidelinex.controller;
+package com.guidescope.controller;
 
-import com.guidelinex.dto.SearchCapabilitiesDTO;
-import com.guidelinex.dto.SearchResponseDTO;
-import com.guidelinex.service.SearchService;
+import com.guidescope.dto.AutocompleteResponseDTO;
+import com.guidescope.dto.SearchCapabilitiesDTO;
+import com.guidescope.dto.SearchResponseDTO;
+import com.guidescope.service.SearchService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -17,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * SearchController exposes the primary REST interface for GuidelineX.
+ * SearchController exposes the primary REST interface for GuideScope.
  * 
  * Responsibilities:
  * - Expose read-only /search endpoint
@@ -84,15 +85,15 @@ public class SearchController {
     @Operation(summary = "Get autocomplete suggestions", description = "Returns up to 5 search suggestions based on document titles and keywords. Requires minimum 3 characters. Respects active search filters.")
     @ApiResponse(responseCode = "200", description = "Suggestions retrieved successfully")
     @GetMapping("/search/autocomplete")
-    public com.guidelinex.dto.AutocompleteResponseDTO getAutocomplete(
+    public AutocompleteResponseDTO getAutocomplete(
             @Parameter(description = "Partial search term (min 3 chars)") @RequestParam("q") String query,
             @Parameter(description = "Filter by document types") @RequestParam(value = "type", required = false) String[] types,
             @Parameter(description = "Filter by region") @RequestParam(value = "region", required = false) String region,
             @Parameter(description = "Filter by specialty field") @RequestParam(value = "field", required = false) String field,
             @Parameter(description = "Minimum publication year") @RequestParam(value = "year_from", required = false) Integer yearFrom,
             @Parameter(description = "Maximum publication year") @RequestParam(value = "year_to", required = false) Integer yearTo) {
-        List<com.guidelinex.dto.AutocompleteResponseDTO.Suggestion> suggestions = searchService
+        List<AutocompleteResponseDTO.Suggestion> suggestions = searchService
                 .getAutocompleteSuggestions(query, types, region, field, yearFrom, yearTo);
-        return new com.guidelinex.dto.AutocompleteResponseDTO(suggestions);
+        return new AutocompleteResponseDTO(suggestions);
     }
 }

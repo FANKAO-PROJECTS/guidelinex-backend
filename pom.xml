@@ -8,9 +8,9 @@
 		<version>4.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.guidelinex</groupId>
+	<groupId>com.guidescope</groupId>
 	<artifactId>guidescope-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>guidescope-api</name>
 	<description>Clinical Search Discovery Platform - GuideScope</description>
 	<url/>

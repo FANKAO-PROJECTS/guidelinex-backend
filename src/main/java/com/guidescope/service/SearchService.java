@@ -1,9 +1,9 @@
-package com.guidelinex.service;
+package com.guidescope.service;
 
-import com.guidelinex.dto.SearchCapabilitiesDTO;
-import com.guidelinex.dto.SearchResponseDTO;
-import com.guidelinex.dto.SearchResultDTO;
-import com.guidelinex.repository.DocumentRepository;
+import com.guidescope.dto.SearchCapabilitiesDTO;
+import com.guidescope.dto.SearchResponseDTO;
+import com.guidescope.dto.SearchResultDTO;
+import com.guidescope.repository.DocumentRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -206,7 +206,7 @@ public class SearchService {
      * Triggers only for queries with length >= 3.
      */
     @Transactional(readOnly = true)
-    public List<com.guidelinex.dto.AutocompleteResponseDTO.Suggestion> getAutocompleteSuggestions(
+    public List<com.guidescope.dto.AutocompleteResponseDTO.Suggestion> getAutocompleteSuggestions(
             String query, String[] types, String region, String field, Integer yearFrom, Integer yearTo) {
         if (query == null || query.trim().length() < 3) {
             return List.of();
@@ -231,7 +231,7 @@ public class SearchService {
                         try {
                             String title = (row[0] != null) ? (String) row[0] : "";
                             String slug = (row[1] != null) ? (String) row[1] : "";
-                            return new com.guidelinex.dto.AutocompleteResponseDTO.Suggestion(title, slug);
+                            return new com.guidescope.dto.AutocompleteResponseDTO.Suggestion(title, slug);
                         } catch (Exception e) {
                             log.error("Error mapping autocomplete suggestion row: {}", e.getMessage(), e);
                             return null;

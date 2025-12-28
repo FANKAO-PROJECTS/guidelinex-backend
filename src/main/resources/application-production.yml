@@ -15,7 +15,7 @@ spring:
 logging:
   level:
     root: INFO
-    com.guidelinex: INFO
+    com.guidescope: INFO
     org.springframework.web: INFO
     org.hibernate.SQL: ERROR
 

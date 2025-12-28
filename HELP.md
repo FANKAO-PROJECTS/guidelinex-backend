@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.guidelinex.guidelinex-api' is invalid and this project uses 'com.guidelinex.guidelinex_api' instead.
+* The original package name 'com.guidescope.guidescope-api' is invalid and this project uses 'com.guidescope.guidescope_api' instead.
 
 # Getting Started
 

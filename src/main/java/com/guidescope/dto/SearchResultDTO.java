@@ -1,4 +1,4 @@
-package com.guidelinex.dto;
+package com.guidescope.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

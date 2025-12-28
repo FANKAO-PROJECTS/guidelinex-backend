@@ -1,13 +1,13 @@
-package com.guidelinex;
+package com.guidescope;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GuidelinexApiApplication {
+public class GuideScopeApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GuidelinexApiApplication.class, args);
+		SpringApplication.run(GuideScopeApiApplication.class, args);
 	}
 
 }

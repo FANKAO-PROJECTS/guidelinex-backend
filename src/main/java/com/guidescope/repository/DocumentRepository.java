@@ -1,6 +1,6 @@
-package com.guidelinex.repository;
+package com.guidescope.repository;
 
-import com.guidelinex.model.Document;
+import com.guidescope.model.Document;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import java.util.UUID;
 
 /**
- * DocumentRepository handles low-level data access for GuidelineX.
+ * DocumentRepository handles low-level data access for GuideScope.
  * 
  * Implementation Details:
  * - Uses PostgreSQL Full-Text Search (FTS) with prefix matching

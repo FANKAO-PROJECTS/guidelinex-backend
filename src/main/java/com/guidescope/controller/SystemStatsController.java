@@ -1,7 +1,7 @@
-package com.guidelinex.controller;
+package com.guidescope.controller;
 
-import com.guidelinex.model.SystemStats;
-import com.guidelinex.service.SystemStatsService;
+import com.guidescope.model.SystemStats;
+import com.guidescope.service.SystemStatsService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

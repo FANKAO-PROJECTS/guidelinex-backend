@@ -1,6 +1,6 @@
-package com.guidelinex.exception;
+package com.guidescope.exception;
 
-import com.guidelinex.dto.ErrorResponse;
+import com.guidescope.dto.ErrorResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

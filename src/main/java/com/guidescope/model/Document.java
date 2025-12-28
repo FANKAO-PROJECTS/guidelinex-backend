@@ -1,4 +1,4 @@
-package com.guidelinex.model;
+package com.guidescope.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -11,7 +11,7 @@ import java.util.UUID;
  * 
  * Characteristics:
  * - Append-only (immutable via API)
- * - Fully synchronized with GuidelineX schema
+ * - Fully synchronized with GuideScope schema
  */
 @Entity
 @Table(name = "documents", uniqueConstraints = {

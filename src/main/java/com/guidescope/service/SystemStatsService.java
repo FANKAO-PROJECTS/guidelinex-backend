@@ -1,7 +1,7 @@
-package com.guidelinex.service;
+package com.guidescope.service;
 
-import com.guidelinex.model.SystemStats;
-import com.guidelinex.repository.SystemStatsRepository;
+import com.guidescope.model.SystemStats;
+import com.guidescope.repository.SystemStatsRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

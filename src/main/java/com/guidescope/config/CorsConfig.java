@@ -1,4 +1,4 @@
-package com.guidelinex.config;
+package com.guidescope.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

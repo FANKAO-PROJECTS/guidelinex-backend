@@ -1,4 +1,4 @@
-package com.guidelinex.config;
+package com.guidescope.config;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;

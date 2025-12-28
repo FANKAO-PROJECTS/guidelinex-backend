@@ -1,4 +1,4 @@
-package com.guidelinex.model;
+package com.guidescope.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

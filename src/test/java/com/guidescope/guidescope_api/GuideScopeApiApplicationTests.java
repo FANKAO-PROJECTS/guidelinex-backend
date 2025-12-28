@@ -1,10 +1,10 @@
-package com.guidelinex.guidelinex_api;
+package com.guidescope.guidescope_api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GuidelinexApiApplicationTests {
+class GuideScopeApiApplicationTests {
 
 	@Test
 	void contextLoads() {

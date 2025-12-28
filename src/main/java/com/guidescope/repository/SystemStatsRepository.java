@@ -1,6 +1,6 @@
-package com.guidelinex.repository;
+package com.guidescope.repository;
 
-import com.guidelinex.model.SystemStats;
+import com.guidescope.model.SystemStats;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
